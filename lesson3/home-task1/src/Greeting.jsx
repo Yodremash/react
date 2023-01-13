@@ -6,4 +6,5 @@ const Greeting = (props) => (
     props.lastName
   }. I am ${moment().diff(props.birthDate, 'years')} years old`}</div>
 );
+
 export default Greeting;
