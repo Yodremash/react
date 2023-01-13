@@ -6,6 +6,6 @@ import Greeting from './Greeting.jsx';
 const rootElement = document.querySelector('#root');
 
 ReactDOM.render(
-  <Greeting firstName="John" lastName="Doe" birthDate={new Date('2005')} />,
+  <Greeting firstName={'John'} lastName={'Doe'} birthDate={new Date('2006')} />,
   rootElement
 );
