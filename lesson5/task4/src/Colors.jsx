@@ -11,9 +11,9 @@ setBodyColor = color => {
     render(){
         return (
             <div className="colors">
-            <button style ={{backgroundColor:RED,}} onClick={() => this.setBodyColor(RED)} className='color__button' ></button>
-            <button style ={{backgroundColor:GREEN,}} onClick={() => this.setBodyColor(GREEN)} className='color__button'></button>
-            <button style ={{backgroundColor:BLUE,}} onClick={() => this.setBodyColor(BLUE)} className='color__button'></button>
+            <button style ={{backgroundColor:RED,}} onClick={() => this.setBodyColor(RED)} className='colors__button' ></button>
+            <button style ={{backgroundColor:GREEN,}} onClick={() => this.setBodyColor(GREEN)} className='colors__button'></button>
+            <button style ={{backgroundColor:BLUE,}} onClick={() => this.setBodyColor(BLUE)} className='colors__button'></button>
           </div>
           
         )
