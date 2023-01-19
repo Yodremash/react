@@ -1,10 +1,5 @@
 import React from 'react';
 import Info from './Info';
-
-    const IPhone13Info= 'Price is 500$. Available in 2 colors';
-    const IPhone13ProInfo= 'Price is 650$. Not available.'
-
-
 class Page extends React.Component {
 
     state = {
@@ -17,22 +12,18 @@ class Page extends React.Component {
         })
     }
 
-    clearText = () => this.setState({
-        info: ''
-    })
-
     render() {
     return (
         <div className="page">
             <Info info={this.state.info} />
             <div className="actions">
-                <button className="btn" onClick={() => this.setInfo(IPhone13Info)}>
+                <button className="btn" onClick={() => this.setInfo('IPhone 13 - Price is 500$. Available in 2 colors')}>
                 IPhone 13
                 </button>
-                <button className="btn" onClick={() => this.setInfo(IPhone13ProInfo)}>
+                <button className="btn" onClick={() => this.setInfo('Price is 650$. Not available.')}>
                 IPhone 13 Pro
                 </button>
-                <button className="btn" onClick={() => this.clearText()}>
+                <button className="btn" onClick={() => this.setInfo('')}>
                 Clear
                 </button>
             </div>
