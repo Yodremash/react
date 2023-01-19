@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Info = ({ text }) => !text
-    ? null
-    : <div className="message">
-        {text}
-    </div>
+class Info extends React.Component {
+    render = () =>
+      !this.props.info ? null : <div className="message">{this.props.info}</div>;
+  }
 
-export default Info;
+  export default Info

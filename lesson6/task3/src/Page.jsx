@@ -24,7 +24,7 @@ class Page extends React.Component {
     render() {
     return (
         <div className="page">
-            <Info text={this.state.info} />
+            <Info info={this.state.info} />
             <div className="actions">
                 <button className="btn" onClick={() => this.setInfo(IPhone13Info)}>
                 IPhone 13
