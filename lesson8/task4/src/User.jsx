@@ -8,16 +8,13 @@ class User extends React.Component {
     }
   }
   componentDidMount() {
-    this.fetchUser(this.props.userId)
+    fetch(`https://api.github.com/users/${this.props.userId}`)
+      .then(res => res.json())
+      .then(data => this.setState({
+        user: data
+      }))
   }
 
-  fetchUser = userId =>  {
-    fetch(`https://api.github.com/users/${userId}`)
-  .then(res => res.json())
-  .then(data => this.setState({
-    user: data
-  }))
-}
   render() {
     if (!this.state.user){
        return null;
