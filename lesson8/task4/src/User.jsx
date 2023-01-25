@@ -20,7 +20,7 @@ class User extends React.Component {
        return null;
       }
 
-    const { avatar_url, name, location } = this.state.user.
+    const { avatar_url, name, location } = this.state.user
     return (
       <div className="user">
         <img
