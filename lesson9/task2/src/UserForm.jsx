@@ -43,7 +43,7 @@ this.setState({
       <option value="london">London</option>
       <option value="new-york">New York</option>
       <option value="coconut">Sidney</option>
-      <option value="mango">Berlin</option>
+      <option value="berlin">Berlin</option>
     </select>
   </div>
 
