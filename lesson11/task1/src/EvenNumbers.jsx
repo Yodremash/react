@@ -15,3 +15,5 @@ class EvenNumbers extends React.Component {
     )
   }
 }
+
+export default EvenNumbers
