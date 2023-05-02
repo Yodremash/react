@@ -12,9 +12,7 @@ const Task = ({ id, done, text, onChange, onDelete }) => {
         onChange={() => onChange(id)}
       />
       <span className="list-item__text">{text}</span>
-      <button className="list-item__delete-btn" onClick={() => onDelete(id)}>
-        +
-      </button>
+      <button className="list-item__delete-btn" onClick={() => onDelete(id)}></button>
     </li>
   );
 };

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Task from './task';
+import Task from './Task';
 import CreateTaskInput from './CreateTaskInput';
 
-const baseUrl = 'https://63a4977b2a73744b007c0712.mockapi.io/api/v1/:endpoint';
+const baseUrl = 'https://64510ed8a3221969115987a0.mockapi.io/';
 class TasksList extends Component {
   state = {
     tasks: [],
